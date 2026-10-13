@@ -12,7 +12,7 @@
 
 ## 安装
 
-把此目录作为本地 DSH 插件包安装到当前 profile。插件目录中已经包含 DSH 所需的 `package.json`、`cordis.patch.yml`、Host 入口和 Web Client 入口。
+把此目录作为本地 DSH 插件包安装到当前 profile。这个插件面向 DeepSeek Harness 桌面版：桌面端的 Host 逻辑负责文件删除，桌面窗口内嵌的 Web UI 负责显示菜单按钮，因此 `dsh.client.platform` 使用 `web` 是桌面版插件的正确配置。插件目录中已经包含 DSH 所需的 `package.json`、`cordis.patch.yml`、Host 入口和 Web Client 入口。
 
 如果使用 profile 的 `package.json` 管理 bundle，可加入：
 
